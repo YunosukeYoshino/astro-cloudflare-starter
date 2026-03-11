@@ -1,0 +1,5 @@
+# Copy this file to .dev.vars for local Wrangler variables.
+# Add only server-side variables here. Do not store secrets in the repository.
+
+APP_ENV=development
+API_ORIGIN=https://example.com

@@ -1,0 +1,46 @@
+---
+layout: ../../layouts/BaseLayout.astro
+title: D1 Starter Guide
+description: Add Cloudflare D1 to the Astro Supernova boilerplate.
+---
+
+# D1 starter guide
+
+This boilerplate includes a D1 migration, a demo endpoint at `/api/d1-demo.json`, and a small app
+example at `/starter/d1`.
+
+## 1. Create a database
+
+```bash
+bunx wrangler d1 create my-astro-app-db
+```
+
+Copy the generated `database_id` and `preview_database_id` into the commented `d1_databases` block in `wrangler.jsonc`.
+
+## 2. Apply migrations
+
+```bash
+bunx wrangler d1 migrations apply my-astro-app-db --local
+bunx wrangler d1 migrations apply my-astro-app-db --remote
+```
+
+## 3. Regenerate Worker types
+
+```bash
+bun run generate-types
+```
+
+## 4. Check the demo route
+
+Open `/api/d1-demo.json`.
+
+- If D1 is configured, you will see seeded rows from `starter_messages`.
+- If not, the endpoint returns the exact setup steps you still need to run.
+
+## 5. Open the starter app
+
+Open `/starter/d1`.
+
+- The page renders the latest D1 rows.
+- The form posts new rows to the included API route.
+- Without D1, it stays safe and shows setup guidance instead.
