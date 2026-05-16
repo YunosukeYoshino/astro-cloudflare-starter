@@ -27,25 +27,25 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^13.3.0",
-    "@astrojs/mdx": "^5.0.4",
+    "@astrojs/cloudflare": "^13.5.1",
+    "@astrojs/mdx": "^5.0.6",
     "@astrojs/sitemap": "^3.7.2",
-    "@tailwindcss/vite": "^4.2.4",
-    "astro": "^6.2.1",
-    "tailwindcss": "^4.2.4"
+    "@tailwindcss/vite": "^4.3.0",
+    "astro": "^6.3.3",
+    "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
-    "@biomejs/biome": "^2.4.14",
-    "@playwright/test": "^1.59.1",
-    "@types/node": "^22.19.17",
-    "@typescript/native-preview": "^7.0.0-dev.20260504.1",
-    "@vitest/ui": "^4.1.5",
+    "@biomejs/biome": "^2.4.15",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^22.19.19",
+    "@typescript/native-preview": "^7.0.0-dev.20260516.1",
+    "@vitest/ui": "^4.1.6",
     "husky": "^9.1.7",
     "jsdom": "^28.1.0",
     "lint-staged": "^16.4.0",
     "typescript": "^5.9.3",
-    "vitest": "^4.1.5",
-    "wrangler": "^4.87.0"
+    "vitest": "^4.1.6",
+    "wrangler": "^4.92.0"
   }
 }
